@@ -19,11 +19,42 @@ public class Main {
         StarTemp Sol = new StarTemp();
         StarTemp Maxima = new StarTemp();
         StarTemp Ales = new StarTemp();
+        StarTemp Atok = new StarTemp();
+        StarTemp Kriy = new StarTemp();
+        StarTemp Giol = new StarTemp();
+        StarTemp Tramois = new StarTemp();
+        StarTemp Lah = new StarTemp();
+        StarTemp Kuel = new StarTemp();
+        StarTemp Ruan = new StarTemp();
+        StarTemp Veprio = new StarTemp();
+        StarTemp Evrae = new StarTemp();
+        StarTemp Azon = new StarTemp();
+        StarTemp Strope = new StarTemp();
+        StarTemp Striptuar = new StarTemp();
+        StarTemp Adeotre = new StarTemp();
+        StarTemp Keleth = new StarTemp();
+        StarTemp Bota = new StarTemp();
+        StarTemp Thiol = new StarTemp();
+        StarTemp Saren = new StarTemp();
+        StarTemp Kadi = new StarTemp();
+        StarTemp Kro = new StarTemp();
+        StarTemp Koh = new StarTemp();
+        StarTemp Xos = new StarTemp();
+        StarTemp Eura = new StarTemp();
+        StarTemp Fleok = new StarTemp();
+        StarTemp Pheur = new StarTemp();
+        StarTemp Avlian = new StarTemp();
+        StarTemp Ikum = new StarTemp();
+        StarTemp Peode = new StarTemp();
+        StarTemp Oxuatri = new StarTemp();
+        StarTemp Xaar = new StarTemp();
 
         //Once the stars are generated are details are added later
         Sol.setStarDetails(0, "Sol", "white", "Maxima", "Ales", null, null, Maxima, Ales, null, null);
-        Maxima.setStarDetails(1, "Maxima", "red", "Sol", "Ales", null, null, Sol, Ales, null, null);
-        Ales.setStarDetails(2, "Ales", "blue", "Sol", "Maxima", null, null, Sol, Maxima, null, null);
+        Maxima.setStarDetails(1, "Maxima", "red", "Sol", "Ales", "Atok", null, Sol, Ales, Atok, null);
+        Ales.setStarDetails(2, "Ales", "blue", "Sol", "Maxima", "Kriy", null, Sol, Maxima, Kriy, null);
+        Atok.setStarDetails(3, "Atok", "blue", "Maxima", "Kriy", "Giol", "Tramois", Maxima, Kriy, Giol, Tramois);
+        Kriy.setStarDetails(4, "Kriy", "blue", "Ales", "Atok", "Giol", null, Ales, Atok, Giol, null);
 
         //Ship generation
         Ship myShip = new Ship("Sol",Sol);
@@ -38,7 +69,7 @@ public class Main {
                 //Main page of ship controls
                 input = Integer.parseInt(JOptionPane.showInputDialog("SHIP CONTROL " + myShip.getNAME() +  "\n"
                                                                         + "Fuel level: " + myShip.getFuel() + "\n"
-                                                                        + "Your current location: " + myShip.getLocation() + "\n"
+                                                                        + "Your current location: " + myShip.currentStarName()  + "\n"
                                                                         + "1) Jump to a new star.\n"
                                                                         + "0) To quit"));
 

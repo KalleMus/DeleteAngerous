@@ -28,6 +28,11 @@ public class Ship {
         setStar(star);
     }
 
+    public String currentStarName() {
+      StarTemp currentStar = getStar();
+      return currentStar.getName();
+    }
+
     //Used when jumpingto a new star
     public void shipLocation() {
         StarTemp currentStar = getStar();

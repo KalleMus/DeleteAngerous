@@ -63,6 +63,9 @@ public class StarTemp {
         this.star3 = star3;
         this.star4 = star4;
     }
+    public String getName() {
+        return name;
+    }
 
     public String getN1() {
         return n1;
